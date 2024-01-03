@@ -24,13 +24,13 @@ Use the `khaliq/toolkit` image for troubleshooting networking:
 * **Container's Network Namespace:** Investigate networking issues within a container's network namespace:
 
     ```bash
-    $ docker run -it --rm --name toolkit khaliq/toolkit
+    docker run -it --rm --name toolkit khaliq/toolkit
     ```
 
 * **Host's Network Namespace:** Investigate host-related networking issues:
 
     ```bash
-    $ docker run -it --rm --name toolkit --net host khaliq/toolkit
+    docker run -it --rm --name toolkit --net host khaliq/toolkit
     ```
 
 ## Toolkit with Kubernetes
@@ -38,7 +38,7 @@ Use the `khaliq/toolkit` image for troubleshooting networking:
 * Create a throw away pod:
 
     ```bash
-    $ kubectl run toolkit --rm -i --tty --image khaliq/toolkit
+    kubectl run toolkit --rm -i --tty --image khaliq/toolkit
     ```
 
 * Create a throw away pod in the host's network namespace:
@@ -47,6 +47,15 @@ Use the `khaliq/toolkit` image for troubleshooting networking:
     $ kubectl run toolkit --rm -i --tty --overrides='{"spec": {"hostNetwork": true}}' --image khaliq/toolkit
     ```
     
+
+### Alias
+Consider adding alias to your `.bashrc` or `.zshrc` for convenience.
+  ```bash
+  # Docker
+  echo "alias drt='docker run -it --rm --name toolkit khaliq/toolkit:latest'" >> $HOME/.zshrc
+  # Kubernetes
+  echo "alias krt='kubectl run toolkit --rm -i --tty --image khaliq/toolkit:latest'" >> $HOME/.zshrc
+  ``` 
 
 ## Tools Included
 - [apache2-utils](https://httpd.apache.org/docs/2.4/programs/ab.html) - Apache HTTP server benchmarking tool.
