@@ -121,4 +121,4 @@ If you encounter any problems or have suggestions for improvements, please [open
 
 ## Acknowledgments
 This project was inspired by [Netshoot](https://github.com/nicolaka/netshoot), a similar collection of networking troubleshooting tools.
-I extend my gratitude to the creators and contributors of Netshoot for their valuable work, which served as an inspiration for this project.
+I extend my gratitude to the creators and contributors of Netshoot for their valuable work.
