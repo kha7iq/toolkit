@@ -114,6 +114,8 @@ Consider adding alias to your `.bashrc` or `.zshrc` for convenience.
 - [litecli](https://litecli.com/) - Command-line interface for SQLite with auto-completion and syntax highlighting.
 - [termshark](https://termshark.io/) - Terminal UI for Wireshark.
 - [grpcurl](https://github.com/fullstorydev/grpcurl) - Command-line tool for gRPC.
+- [smartmontools](https://www.smartmontools.org/wiki/Download) - smart tools for disk
+- [nvme-cli](https://manpages.debian.org/testing/nvme-cli/nvme.1.en.html) - utility to provide tooling for nvme drives.
 
 
 ## Issues
